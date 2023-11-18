@@ -8,6 +8,7 @@ const buttons = document.querySelectorAll('button');
 document.getElementById("empty").style.cursor = "default";
 document.getElementById("inputtext").style.cursor = "default";
 
+document.getElementById("inputtext").disabled = true;
 
 //hesap yapan fonksiyon
 function calculate(expression) {
