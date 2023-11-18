@@ -12,8 +12,8 @@ document.getElementById("inputtext").disabled = true;
 
 //hesap yapan fonksiyon
 function calculate(expression) {
-    console.log(expression);
-    console.log(typeof (expression));
+    //console.log(expression);
+    //console.log(typeof (expression));
     try {
         return new Function('return ' + expression)();
     } catch (error) {
