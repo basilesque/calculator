@@ -17,7 +17,7 @@ function calculate(expression) {
     try {
         return new Function('return ' + expression)();
     } catch (error) {
-        return 'Malformed Operation';
+        return 'Error';
     }
 }
 
