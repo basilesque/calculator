@@ -1,17 +1,14 @@
-/* body'nin genel özellikleri, arkaplan ve padding */
 body {
     background: linear-gradient(to left, rgb(14, 48, 14) 28px, rgb(91, 31, 31) 77%, rgb(17, 52, 52));
     padding: 20px;
 }
 
-/* grid'in container'ı ortaladık*/
 .grid-container {
     display: grid;
     align-items: center;
     justify-content: center;
 }
 
-/* grid'in görünümü, sütun ve satırları, arkaplanı */
 .calculator-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,7 +17,6 @@ body {
     background-color: #999;
 }
 
-/* grid içinde butonları stilleri */
 .calculator-grid button {
     font-size: 25px;
     background-color: #d0c0c0;
@@ -29,7 +25,6 @@ body {
     font-family: 'DM Mono', monospace;
 }
 
-/* hesap makinesinin ekranının görünümü */
 textarea {
     grid-column: span 4;
     font-family: 'DM Mono', monospace;
@@ -40,12 +35,10 @@ textarea {
     border: none;
 }
 
-/* en alttaki butonları stilleri */
 .calculator-grid button:nth-child(n+18) {
     background-color: rgb(31, 67, 56);
 }
 
-/* butonun üzerine imleçle gelince uygulanan stiller */
 button:hover,
 .calculator-grid button:nth-child(n+18):hover {
     background-color: rgb(11, 53, 68);
@@ -56,12 +49,10 @@ button:hover,
     transform: translateY(-0.24em);
 }
 
-/* ekran alanının kullanıcı tarafından büyütülüp küçütülmemesi için */
 textarea {
     resize: none;
 }
 
-/* boş butonun üzerine gelince rengi değişmemesi için reassign'lıyorum rengi */
 #empty {
     background-color: #d0c0c0;
     transition: 0s;
